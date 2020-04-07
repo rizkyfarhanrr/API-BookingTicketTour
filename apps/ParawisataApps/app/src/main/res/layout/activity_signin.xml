@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.SigninActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="38dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="SIGNIN"
+            android:textSize="19pt"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#47525E"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Akses signin aplikasi dengan akun anda"
+            android:textSize="7pt"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#86909B"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/style_edittext"
+            android:hint="Username"
+            android:inputType="text"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="7pt"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:drawableRight="@drawable/ic_username"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/style_edittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="7pt"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:drawableRight="@drawable/ic_password"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:onClick="backtToDashboard"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/style_button_back"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="4dp"/>
+
+            <Button
+                android:id="@+id/btnProsesSignin"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="9pt"
+                android:background="@drawable/style_button_primary"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="LOGIN SEKARANG"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="goToRegisterActivity"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#F0F3F7"
+            android:fontFamily="sans-serif-condensed"
+            android:text="REGISTER NOW"
+            android:textColor="#BEC5D0"
+            android:textSize="13pt"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ParawisataApps</string>
+
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+
+    // TITTLE
+    <string name="tittle_PackageTravel">Happy Travels</string>
+    <string name="tittle_PackageHotel">Chose Hotel</string>
+    <string name="tittle_PackageDestinationTour">Destination Tour</string>
+    <string name="tittle_PackageGuide">More Guide</string>
+    // SUBTITTLE
+    <string name="travel_text">Happy Travel with Parawisata Apps</string>
+    <string name="hotel_text">You can Chose Hotel in Place Destination</string>
+    <string name="destination_text">More Destination Tour in your Place</string>
+    <string name="guide_text">You can Get the Guide with Fun Teach</string>
+</resources>

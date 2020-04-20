@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,11 +25,18 @@ public class UserActivity extends AppCompatActivity {
 
         // TODO A.2: Add Preferences Here
         tvGetUsernameafterLogin.setText("Welcome! " + Preferences.getLoggedInUser(getBaseContext()));
+        String usernameget = Preferences.getLoggedInUser(getBaseContext());
+
+        Log.d("LOG", "USERNAME " + usernameget);
+        getDataUserLogged(usernameget);
     }
 
     public void logoutUser(View view) {
         Preferences.clearLoggedInuser(getBaseContext());
         startActivity(new Intent(UserActivity.this, SigninActivity.class));
         finish();
+    }
+
+    public void getDataUserLogged(String username) {
     }
 }

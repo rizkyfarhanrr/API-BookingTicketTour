@@ -7,6 +7,10 @@
     $_AUTH = mysqli_connect($_SERVER_DB, $_USERNAME_DB, $_PASSWORD_DB, $_DATABASE_DB);
 
     if ($_AUTH) {
-        // echo "Berhasil terhubung ke database server hosting.";
+        echo json_encode(array(
+            "message" => "Congratulation!, your connection is successfully.", 
+            "code" => 200, 
+            "status" => true)
+        );
     }
 ?>

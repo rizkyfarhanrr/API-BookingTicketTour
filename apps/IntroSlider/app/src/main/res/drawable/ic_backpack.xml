@@ -1,3 +1,4 @@
+<!-- TODO 6.1: Add icon Vector for Place in Layout Intro -->
 <vector android:height="500dp" android:viewportHeight="511.99997"
     android:viewportWidth="511" android:width="500dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#3c2b8e" android:pathData="m473.906,378.117c17.004,-33.352 26.594,-71.113 26.594,-111.117 0,-135.313 -109.688,-245 -245,-245 -135.309,0 -245,109.688 -245,245 0,40.004 9.594,77.766 26.594,111.117zM473.906,378.117"/>

@@ -4,7 +4,6 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if (trim($_POST['username']) == "") {
-
             $_response["message"] = trim("Fill your username in here.");
             $_response["code"] = 400;
             $_response["status"] = false;

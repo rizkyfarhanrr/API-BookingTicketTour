@@ -1,0 +1,54 @@
+{
+  "ftp://files.000webhost.com:21@uarnixapps": {
+    "public_html": {
+      "api": {
+        "wisataindonesia": {
+          "auth": {
+            "signin.php": {
+              "type": "-",
+              "size": 37,
+              "lmtime": 1584265354246,
+              "modified": false
+            },
+            "signup.php": {
+              "type": "-",
+              "size": 2871,
+              "lmtime": 1584376077845,
+              "modified": false
+            }
+          },
+          "config": {
+            "connection.php": {
+              "type": "-",
+              "size": 370,
+              "lmtime": 1584441971951,
+              "modified": false
+            }
+          },
+          "database": {},
+          "modul": {
+            "get_dataaccountuser.php": {
+              "type": "-",
+              "size": 1388,
+              "lmtime": 1587258521397,
+              "modified": false
+            },
+            "get_listdatakota.php": {
+              "type": "-",
+              "size": 962,
+              "lmtime": 1584443191507,
+              "modified": false
+            },
+            "post_filterlistdatawisata.php": {
+              "type": "-",
+              "size": 2244,
+              "lmtime": 1586346303174,
+              "modified": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "$version": 1
+}

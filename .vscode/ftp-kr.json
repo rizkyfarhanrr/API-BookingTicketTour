@@ -1,0 +1,16 @@
+{
+    "host": "files.000webhost.com",
+    "username": "uarnixapps",
+    "password": "!!@&!*))>?!!453p714d!",
+    "remotePath": "/public_html/api/wisataindonesia/",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": false,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

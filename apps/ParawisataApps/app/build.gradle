@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "id.mpeinc.parawisataapps"
-        minSdkVersion 24 // ubah minSdkVersion dari 16 ke 26
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"

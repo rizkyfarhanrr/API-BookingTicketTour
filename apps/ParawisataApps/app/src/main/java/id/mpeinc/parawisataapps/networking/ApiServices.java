@@ -2,6 +2,7 @@ package id.mpeinc.parawisataapps.networking;
 
 import id.mpeinc.parawisataapps.model.ResponseLogin;
 import id.mpeinc.parawisataapps.model.ResponseRegister;
+import id.mpeinc.parawisataapps.model.modulaccount.ResponseAccountLogged;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -26,4 +27,11 @@ public interface ApiServices {
             @Field("username") String str_username,
             @Field("password") String str_password
     );
+
+    @FormUrlEncoded
+    @POST("get_dataaccountuser.php")
+    Call<ResponseAccountLogged> loggedInUser (
+            @Field("username") String str_username
+    );
+
 }

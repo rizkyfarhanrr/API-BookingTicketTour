@@ -8,7 +8,6 @@
         $username = trim($_POST['username_user']);
         $password = trim($_POST['password_user']);
         $email = trim($_POST['email_user']);
-        $picture = trim($_POST['picture']);
 
         $_query_cekuser_exist = mysqli_query($_AUTH, "SELECT * FROM tbl_user WHERE username_user = '$username'");
         $_execute_cekuser_exist = mysqli_num_rows($_query_cekuser_exist);
@@ -21,7 +20,7 @@
 
             echo json_encode($_response);
         } else {
-            $_query_insert_new_user = "INSERT INTO tbl_user (kode_user, namalengkap_user, jeniskelamin_user, username_user, password_user, email_user, picture) VALUES ($kodeuser, '$namalengkap', '$jeniskelamin', '$username', '$password', '$email', '$picture')";
+            $_query_insert_new_user = "INSERT INTO tbl_user (kode_user, namalengkap_user, jeniskelamin_user, username_user, password_user, email_user) VALUES ($kodeuser, '$namalengkap', '$jeniskelamin', '$username', '$password', '$email')";
             $_execute_register = mysqli_query($_AUTH, $_query_insert_new_user);
 
             $_query_cekuser_exist = mysqli_query($_AUTH, "SELECT * FROM tbl_user WHERE username_user = '$username'");
@@ -38,7 +37,6 @@
                     $data["username_user"] = $row["username_user"];
                     $data["password_user"] = $row["password_user"];
                     $data["email_user"] = $row["email_user"];
-                    $data["picture"] = $row["picture"];
                     $data["user_craeted"] = $row["user_craeted"];
 
                     $_response["message"] = trim("You have been registered.");
